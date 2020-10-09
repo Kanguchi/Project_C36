@@ -2,7 +2,7 @@ class food{
     constructor(){
         this.foodStock = 0;
         this.lastFed;
-        this.image = loadImage("Milk.png");
+        this.image = loadImage("images/Milk.png");
     }
     
     updateFoodStock(foodStock){
@@ -19,7 +19,18 @@ class food{
     getFedTime(lastFed){
         this.lastFed = lastFed;
     }
+    bedroom(){
+        background(bedroom, 450, 450);
+    }
+    garden(){
+        background(garden, 450, 450);
+    }
+    washroom(){
+        background(washroom, 450, 450);
+    }
     display(){
+        background(bg);
+  
         var x = 35, y = 60;
 
         imageMode(CENTER);
